@@ -1,8 +1,8 @@
-import "./styles/styles.css";
+import './styles/styles.css';
 
-const plusBtn = document.querySelector(".plus");
-const minusBtn = document.querySelector(".minus");
-const textContainer = document.querySelector("span");
+const plusBtn = document.querySelector('.plus');
+const minusBtn = document.querySelector('.minus');
+const textContainer = document.querySelector('span');
 
 let data = 0;
 
@@ -22,10 +22,10 @@ function displayValue(now, text = data) {
   textContainer.innerHTML = `${text} (${now})`;
 }
 
-plusBtn.addEventListener("click", () => {
+plusBtn.addEventListener('click', () => {
   displayValue(add());
 });
 
-minusBtn.addEventListener("click", () => {
+minusBtn.addEventListener('click', () => {
   displayValue(sub());
 });
