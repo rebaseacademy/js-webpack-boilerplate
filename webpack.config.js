@@ -32,6 +32,6 @@ module.exports = {
     }),
     new WebpackManifestPlugin(),
     new MiniCssExtractPlugin(),
-    new ESLintPlugin({ fix: true })
+    new ESLintPlugin({ })
   ],
 }
