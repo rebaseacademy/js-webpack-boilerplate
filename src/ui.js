@@ -24,14 +24,14 @@ function createHeader({ onSearch }) {
   return header;
 }
 
-function createMovie(movie) {
-  const movieElement = document.createElement('div');
-  movieElement.classList.add('movie');
-  movieElement.innerHTML = `<h2>${movie.title}</h2><p>${movie.overview}</p>`;
-  const img = `https://image.tmdb.org/t/p/original/${movie.backdrop_path}`;
-  movieElement.style.backgroundImage = `url(${img})`;
-  return movieElement;
-}
+// function createMovie(movie) {
+//   const movieElement = document.createElement('div');
+//   movieElement.classList.add('movie');
+//   movieElement.innerHTML = `<h2>${movie.title}</h2><p>${movie.description}</p>`;
+//   const img = `https://image.tmdb.org/t/p/original/${movie.backdrop}`;
+//   movieElement.style.backgroundImage = `url(${img})`;
+//   return movieElement;
+// }
 
 function createMain() {
   const main = document.createElement('main');
@@ -49,7 +49,7 @@ function renderPage({ onSearch }) {
 function renderMovies(movies) {
   mainContainer.innerHTML = '';
   movies.forEach((movie) => {
-    mainContainer.appendChild(createMovie(movie));
+    mainContainer.appendChild(movie.element);
   });
 }
 
