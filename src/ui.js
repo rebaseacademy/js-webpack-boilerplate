@@ -1,4 +1,4 @@
-import './styles/styles.css';
+import './styles/styles.scss';
 
 const appContainer = document.getElementById('app');
 let mainContainer;
